@@ -1,0 +1,91 @@
+*{
+    --blue-light:#B2CBD9
+}
+
+body{
+    background-color:var(--blue-light) ;
+    font-family:Arial, Helvetica, sans-serif ;
+    display: flex;
+    flex-direction: column;
+    /* textt align is horizontal */
+    text-align: center;
+    /* align items is vertical */
+    align-items: center;
+}
+
+header{
+    display: flex;
+    flex-direction: column;
+    /* text aligning is horizontal */
+    text-align: center;
+    /* align items is vertical */
+    align-items: center;
+}
+
+.logo{
+    height: 150px;
+    width: 150px;
+    background-color: orange;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;    
+    border: solid black 5px;
+    border-radius: 50%;  
+}
+
+.logo p {
+    background-color: black;
+    color: antiquewhite;
+    font-size: 1.5rem;
+    padding: 1.5rem;
+    border-radius: 20%;
+}
+
+nav a {
+    text-decoration: none;
+    background-color: black;
+    color: var(--blue-light);
+    padding: 0.5rem;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+    border-radius: 15%;
+
+}
+
+.training-option{
+    margin-top: 15dvw;
+    background-color: black;
+    padding: 1rem;
+    border-radius: 5%;
+}
+
+.training-option img{
+    width: 75dvw;
+    border-radius: 5%;
+}
+
+@media screen and (min-width: 600px) {
+    main {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: space-around;
+        text-align: center;
+        /* align items is vertical */
+        align-items: center;
+    }
+
+    .training-option {
+        margin-top: 5dvw;
+
+    }
+
+    .training-option img{
+        /* width: 25dvw;
+        height: 35dvh; */
+        width: 400px;
+        height: 400px;
+    }
+
+}
